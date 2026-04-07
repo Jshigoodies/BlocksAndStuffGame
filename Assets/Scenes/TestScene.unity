@@ -212,6 +212,8 @@ GameObject:
   - component: {fileID: 130977977}
   - component: {fileID: 130977981}
   - component: {fileID: 130977980}
+  - component: {fileID: 130977982}
+  - component: {fileID: 130977983}
   m_Layer: 0
   m_Name: BossEnemy
   m_TagString: Enemy
@@ -475,6 +477,43 @@ MonoBehaviour:
   explosionPrefab: {fileID: 2195043445027945031, guid: e3298f467fdbdfa4e8bc64cdc70916c3, type: 3}
   enemyAudioSource: {fileID: 0}
   hitSound: {fileID: 8300000, guid: 7ccc53966ec05724eaceaafb69b766c0, type: 3}
+--- !u!95 &130977982
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130977972}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe25a29a5aaa9df46b0e1446375a2f8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &130977983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130977972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fce2f8ec10dded46a24a48cb98ce170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3966136}
+  attackDistance: 10
+  attackCooldown: 1.5
 --- !u!1 &170368165
 GameObject:
   m_ObjectHideFlags: 0
