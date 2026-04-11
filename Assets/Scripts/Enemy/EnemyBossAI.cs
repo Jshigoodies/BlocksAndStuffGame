@@ -10,6 +10,7 @@ public class EnemyBossAI : MonoBehaviour
     [Header("Combat")]
     public float attackCooldown = 1.5f;
     private float nextAttackTime = 0f;
+    [SerializeField] private Collider weaponCollider;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -67,8 +68,16 @@ public class EnemyBossAI : MonoBehaviour
     void AttackPlayer()
     {
 
-        Debug.Log("Enemy Boss attacks the player!");
-        animator.SetTrigger("downAttack");
+        int choice = Random.Range(0, 2);
+
+        if (choice == 0)
+        {
+            animator.SetTrigger("downAttack");
+        }
+        else
+        {
+            animator.SetTrigger("sideAttack");
+        }
     }
 
     void FacePlayer()
@@ -77,4 +86,14 @@ public class EnemyBossAI : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
+
+    public void SetWeaponTrigger(int state)
+    {
+        if (weaponCollider != null)
+        {
+            // Converts 1 to true, 0 to false
+            weaponCollider.isTrigger = (state == 1);
+        }
+    }
+
 }

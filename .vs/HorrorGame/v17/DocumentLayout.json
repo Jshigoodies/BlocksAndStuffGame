@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jshi\\HorrorGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|C:\\Users\\jshi\\HorrorGame\\assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\tank\\mobileturretai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tank\\mobileturretai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\enemy\\enemybossai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybossai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnemyBossAI.cs",
-              "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Enemy\\EnemyBossAI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyBossAI.cs",
-              "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Enemy\\EnemyBossAI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyBossAI.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwEYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T18:56:05.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "EnemyAI.cs",
               "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
               "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwEcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T06:10:41.766Z",
+              "WhenOpened": "2026-04-10T08:58:46.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MobileTurretAI.cs",
+              "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\tank\\MobileTurretAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\tank\\MobileTurretAI.cs",
+              "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\tank\\MobileTurretAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\tank\\MobileTurretAI.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:58:20.908Z",
               "EditorCaption": ""
             }
           ]

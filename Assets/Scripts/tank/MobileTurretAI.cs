@@ -28,8 +28,19 @@ public class MobileTurretAI : MonoBehaviour
 
     void Update()
     {
-        // Don't do anything if the player isn't assigned
-        if (player == null) return;
+
+        if (player == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.transform;
+            }
+            else
+            {
+                Debug.LogError("Player not found in the scene. Please assign the player Transform or tag the player with 'Player'.");
+            }
+        }
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 

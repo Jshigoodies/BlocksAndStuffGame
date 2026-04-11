@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -13,13 +14,25 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider; // Drag your Slider here in the Inspector
 
     private Collider Collider;
+    private bool isBlocking = false;
+    private Animator animator;
+
+
+    //all this to handle the goddam sheild
+    public float maxHoldTime = 3f;
+    public float cooldownDuration = 2f;
+    public Slider shieldBar;
+
+    private float holdTimer = 0f;
+    private bool isOnCooldown = false;
 
     void Start()
     {
         currentHealth = maxHealth;
         Collider = GetComponent<Collider>();
+        animator = GetComponent<Animator>();
 
-        if(healthSlider != null)
+        if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
             healthSlider.value = currentHealth;
@@ -28,12 +41,75 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.LogWarning("Health Slider is not assigned in the Inspector.");
         }
+        if (shieldBar != null)
+        {
+            shieldBar.maxValue = maxHoldTime;
+            shieldBar.value = 0;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // 1. Handle the Overheat/Cooldown state
+        if (isOnCooldown)
+        {
+            // During cooldown, the "heat" (holdTimer) drains back to zero
+            holdTimer -= Time.deltaTime * 1.5f; // Recharges 1.5x faster than it drains
+
+            if (holdTimer <= 0)
+            {
+                holdTimer = 0;
+                isOnCooldown = false;
+                Debug.Log("Shield Ready!");
+            }
+
+            // Force blocking to false while overheated
+            isBlocking = false;
+        }
+        else
+        {
+            bool wantsToBlock = Mouse.current.rightButton.isPressed;
+
+            if (wantsToBlock)
+            {
+                isBlocking = true;
+                holdTimer += Time.deltaTime; // Add "heat"
+
+                if (holdTimer >= maxHoldTime)
+                {
+                    StartCooldown();
+                }
+            }
+            else
+            {
+                isBlocking = false;
+                // ANTI-SPAM: Instead of holdTimer = 0, we drain it slowly
+                if (holdTimer > 0)
+                {
+                    holdTimer -= Time.deltaTime * 0.75f; // Slowly recover shield energy
+                }
+            }
+        }
+
+        // UPDATE THE UI
+        if (shieldBar != null)
+        {
+            // We show the "remaining" energy by doing Max - Current Heat
+            shieldBar.value = maxHoldTime - holdTimer;
+        }
+
+        // Update Animator
+        animator.SetBool("isBlocking", isBlocking);
+    }
+
+    void StartCooldown()
+    {
+        isBlocking = false;
+        isOnCooldown = true;
+        // We don't reset holdTimer to 0 here anymore; 
+        // the Update loop will drain it during the cooldown period.
+        //Debug.Log("Shield overheated! Wait for it to cool down.");
     }
 
 
@@ -73,6 +149,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if(isBlocking)
+        {
+            return; // No damage taken if blocking
+        }
+
         currentHealth -= damage;
 
         if (healthSlider != null)
