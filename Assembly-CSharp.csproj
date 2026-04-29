@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyBossAI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\DeathBarrier.cs" />
     <Compile Include="Assets\Scripts\Player\SwordController.cs" />
   </ItemGroup>
   <ItemGroup>
