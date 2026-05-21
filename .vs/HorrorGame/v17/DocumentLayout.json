@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jshi\\HorrorGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\deathbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deathbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|c:\\users\\jshi\\horrorgame\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE22B22B-B6C4-CFA4-9A50-7E75D4A8DE4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Door.cs",
-              "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Door.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
-              "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Door.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Door.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAkwLAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T02:49:40.671Z",
+              "WhenOpened": "2026-05-21T04:17:34.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DeathBarrier.cs",
-              "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\DeathBarrier.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DeathBarrier.cs",
-              "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\DeathBarrier.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DeathBarrier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\MenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\jshi\\HorrorGame\\Assets\\Scripts\\MenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T19:32:50.934Z",
+              "WhenOpened": "2026-05-21T03:50:25.023Z",
               "EditorCaption": ""
             }
           ]

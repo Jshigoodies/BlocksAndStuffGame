@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -171,5 +172,9 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player has died!");
         // Implement death logic here (e.g., respawn, game over screen, etc.)
+
+        SceneManager.LoadScene("Death");
+        Cursor.lockState = CursorLockMode.None;
+
     }
 }

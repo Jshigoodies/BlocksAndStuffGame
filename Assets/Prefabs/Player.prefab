@@ -5100,10 +5100,10 @@ MonoBehaviour:
   currentHealth: 0
   damageAmount: 5
   healAmount: 60
-  healthSlider: {fileID: 0}
+  healthSlider: {fileID: 511126809664260702}
   maxHoldTime: 3
   cooldownDuration: 2
-  shieldBar: {fileID: 0}
+  shieldBar: {fileID: 8050975440984104017}
 --- !u!95 &5778218790406128558
 Animator:
   serializedVersion: 7
@@ -5550,11 +5550,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 558c0bd9df37cc142b8cbc6795270654, type: 3}
+--- !u!114 &511126809664260702 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6391642195627045218, guid: 558c0bd9df37cc142b8cbc6795270654, type: 3}
+  m_PrefabInstance: {fileID: 6891720837536742204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4607012318796131059 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6938686783818944975, guid: 558c0bd9df37cc142b8cbc6795270654, type: 3}
   m_PrefabInstance: {fileID: 6891720837536742204}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8050975440984104017 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3467349601739646829, guid: 558c0bd9df37cc142b8cbc6795270654, type: 3}
+  m_PrefabInstance: {fileID: 6891720837536742204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8163528434477633992
 PrefabInstance:
   m_ObjectHideFlags: 0
