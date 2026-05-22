@@ -1,7 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -27,8 +28,18 @@ public class PlayerHealth : MonoBehaviour
     private float holdTimer = 0f;
     private bool isOnCooldown = false;
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip blockSound;
+
     void Start()
     {
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
         currentHealth = maxHealth;
         Collider = GetComponent<Collider>();
         animator = GetComponent<Animator>();
@@ -152,6 +163,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(isBlocking)
         {
+            audioSource.PlayOneShot(blockSound);
             return; // No damage taken if blocking
         }
 
